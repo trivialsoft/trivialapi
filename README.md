@@ -49,21 +49,24 @@ POST: http://localhost:port/api/x/any_collectioname
 headers:
 Content-Type:	application/json	
 Authorization: 	Bearer 1234abc
-
 body(raw+JSON(application/json)):
-[
-{"modelname":"Ciudad",
-"Ciudad":1
-"Nombre":"Monterrey"
-},
-{"modelname":"Ciudad",
-"Ciudad":2
-"Nombre":"Tuxpan"
-}
-]
-
 ```
-## Respuesta de confirmacíon
+
+## Body 
+```json
+[
+	{"modelname":"Ciudad",
+	"Ciudad":1
+	"Nombre":"Monterrey"
+	},
+	{"modelname":"Ciudad",
+	"Ciudad":2
+	"Nombre":"Tuxpan"
+	}
+]
+```
+
+## Respuesta de confirmación
 ```json
 {
     "resp": "Actualizado",
