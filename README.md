@@ -1,4 +1,5 @@
 # Trivial API
+> Por Antonio Ramírez Santander
 
 ## Estructura
 ```plain
