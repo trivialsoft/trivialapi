@@ -3,11 +3,11 @@
 ## Estructura
 ```plain
     App  - Api
-	            - Context.php
+				- Context.php
 				- Controller.php
 				- security.php
 	     - Components
-		        - ComponentName.php
+				- ComponentName.php
 				- ComponentNameService.php
 		 - Core
 		        - Api.php
@@ -20,7 +20,7 @@
 				- TQL.php
 				- TrivialAuthorizer.php
 		 - Loop
-		        - Context.php
+				- Context.php
 ```	
 
 ## Autenticacion
@@ -37,8 +37,31 @@
 		client_secret:	testpass
 ```
 
-## Consultar datos
+## Recuperar instancias
 ```plain
 GET: http://localhost:port/api/x/collectioname/level/format/filter/page/sort/tql
 ```
+
+## Persistir instancias
+```plain
+POST: http://localhost:port/api/x/any_collectioname
+
+headers:
+Content-Type:	application/json	
+Authorization: 	Bearer 1234abc
+
+body(raw+JSON(application/json)):
+[
+{"modelname":"Ciudad",
+"Ciudad":1
+"Nombre":"Monterrey"
+},
+{"modelname":"Ciudad",
+"Ciudad":2
+"Nombre":"Tuxpan"
+}
+]
+
+```
+
 
