@@ -63,5 +63,16 @@ body(raw+JSON(application/json)):
 ]
 
 ```
+## Respuesta de confirmacíon
+```json
+{
+    "resp": "Actualizado",
+    "id": "2",
+    "model": "Ciudad",
+    "status": 1,
+    "updates": "{'Ciudad_1':'1','Ciudad_2':'2'}",
+    "exmessage": ""
+}
+```
 
 
