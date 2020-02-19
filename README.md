@@ -56,11 +56,11 @@ body(raw+JSON(application/json)):
 ```json
 [
 	{"modelname":"Ciudad",
-	"Ciudad":1
+	"Ciudad":1,
 	"Nombre":"Monterrey"
 	},
 	{"modelname":"Ciudad",
-	"Ciudad":2
+	"Ciudad":2,
 	"Nombre":"Tuxpan"
 	}
 ]
