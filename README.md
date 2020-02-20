@@ -79,4 +79,45 @@ body(raw+JSON(application/json)):
 }
 ```
 
+## Trivial Validations
+
+> El API Trivial Incluye un mecanismo básico de
+validaciones de los tipos de datos en los modelos, que
+consiste en sentencias en los comentarios de las propiedades, encerrados entre corchetes [] y en lineas separadas, las cuales se listan a continuación.
+
+> Ejemplo:
+
+```php
+/**
+* [@Required]
+* [@Range(1-10)]
+* [@Type(integer)]
+*/
+public $edad;
+```
+
+### @Required
+
+> Si esta presente debe contener un valor
+
+### @Type(DATATYPE)
+
+> Puede ser: 
+* integer, long
+* float  , double
+* string
+* datetime, date
+* boolean , bool
+
+### @StringLength(NUMBER)
+
+> Si se trata de un string se evalua su longitud
+
+### @Range(START-END)
+
+> Esecifica un valor inicial y final ,este debe combinado con @Type(DATATYPE)
+
+### @List(ONE,TWO,TREE)
+
+> Si el elemento esta contenido en los elementos de la lista
 
