@@ -40,7 +40,7 @@
 
 ## Recuperar instancias
 ```plain
-GET: http://localhost:port/api/x/collectioname/level/format/filter/page/sort/tql
+GET: http://localhost:port/api/x/collectioname/id/level/format/filter/page/sort/tql/actions
 ```
 
 ## Persistir instancias
@@ -121,3 +121,6 @@ public $edad;
 
 > Si el elemento esta contenido en los elementos de la lista
 
+### @Authorized
+
+> Si se desea evaluar una condicion para edición
