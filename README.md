@@ -113,11 +113,19 @@ public $edad;
 
 > Si se trata de un string se evalua su longitud
 
+### @UpperCase
+
+>  Convierte el valor a Mayúsculas 
+
+### @LowerCase
+
+>  Convierte el valor a Minúsculas 
+
 ### @Range(START-END)
 
 > Esecifica un valor inicial y final ,este debe combinado con @Type(DATATYPE)
 
-### @List(ONE,TWO,TREE)
+### @List(ONE|TWO|TREE)
 
 > Si el elemento esta contenido en los elementos de la lista
 
@@ -132,4 +140,5 @@ public $edad;
 ### @TransformWith
 
 > Si se desea remplazar el valor por el resultado de un metodo del servicio o modelo
+
 
