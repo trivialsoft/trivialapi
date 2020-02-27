@@ -124,3 +124,12 @@ public $edad;
 ### @Authorized
 
 > Si se desea evaluar una condicion para edición
+
+### @IdentifierOf
+
+> Si se desea obtener identificador de una Entidad dependiendo de el valor actual
+
+### @TransformWith
+
+> Si se desea remplazar el valor por el resultado de un metodo del servicio o modelo
+
