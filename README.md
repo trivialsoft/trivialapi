@@ -141,4 +141,6 @@ public $edad;
 
 > Si se desea remplazar el valor por el resultado de un metodo del servicio o modelo
 
+### @TransformWithReference
 
+> Si se desea remplazar el valor por el resultado de un metodo del servicio o modelo (se recibe la toda la instancia actual)
