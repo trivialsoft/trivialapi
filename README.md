@@ -38,6 +38,10 @@
 		client_secret:	testpass
 ```
 
+```plain
+curl -u cleint_id:client_secret http://localhost:port/api/x/token -d "grant_type=password&username=ANTONIO.RAMIREZ&password=314159"
+```
+
 ## Recuperar instancias
 ```plain
 GET: http://localhost:port/api/x/collectioname/id/level/format/filter/page/sort/tql/actions
