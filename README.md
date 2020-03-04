@@ -96,6 +96,9 @@ consiste en sentencias en los comentarios de las propiedades, encerrados entre c
 * [@Required]
 * [@Range(1-10)]
 * [@Type(integer)]
+* [@IdentifierOf(Grupo->Nombre = Nombre && Grupo->Undone=Undone )]
+* [@TransformWith(UniqueRule)]
+* [@TransformWithReference(Main)]
 */
 public $edad;
 ```
