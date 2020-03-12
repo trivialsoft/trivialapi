@@ -151,3 +151,12 @@ public $edad;
 ### @TransformWithReference
 
 > Si se desea remplazar el valor por el resultado de un metodo del servicio o modelo (se recibe la toda la instancia actual)
+
+### @Ignored
+
+> Se ignora el mapeo de este valor en la entidad
+
+### @Protected
+
+> Evita que la propiedad sea especifida en los elementos del datapack
+
