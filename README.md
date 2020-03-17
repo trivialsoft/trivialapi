@@ -34,12 +34,12 @@
 		grant_type:		password
 		username:		ANTONIO.RAMIREZ
 		password:		314159
-		client_id:		cleintid
+		client_id:		clientid
 		client_secret:	testpass
 ```
 
 ```plain
-curl -u cleint_id:client_secret http://localhost:port/api/x/token -d "grant_type=password&username=ANTONIO.RAMIREZ&password=314159"
+curl -u client_id:client_secret http://localhost:port/api/x/token -d "grant_type=password&username=ANTONIO.RAMIREZ&password=314159"
 ```
 
 ## Recuperar instancias
@@ -83,7 +83,7 @@ body(raw+JSON(application/json)):
 }
 ```
 
-## Trivial Validations
+## Trivial Validations - Transformations 
 
 > El API Trivial Incluye un mecanismo básico de
 validaciones de los tipos de datos en los modelos, que
@@ -97,8 +97,8 @@ consiste en sentencias en los comentarios de las propiedades, encerrados entre c
 * [@Range(1-10)]
 * [@Type(integer)]
 * [@IdentifierOf(Grupo->Nombre = Nombre && Grupo->Undone=Undone )]
-* [@TransformWith(UniqueRule)]
-* [@TransformWithReference(Main)]
+* [@TransformWith(UniqueRule)Mensaje de Cancelación si es Blanco]
+* [@TransformWithReference(Main)Mensaje de Cancelación si es Blanco]
 */
 public $edad;
 ```
@@ -159,4 +159,10 @@ public $edad;
 ### @Protected
 
 > Evita que la propiedad sea especifida en los elementos del datapack
+
+### Notas
+
+> Si se antepone el prefijo + a las propiedades anteriores la validaciones se efectua antes de persistir una instancia
+
+
 
