@@ -160,9 +160,13 @@ public $edad;
 
 > Evita que la propiedad sea especifida en los elementos del datapack
 
+
+### @Field
+
+> Permite especificar el nombre del campo en la tabla asociado al la propiedad 
+
 ### Notas
 
 > Si se antepone el prefijo + a las propiedades anteriores la validaciones se efectua antes de persistir una instancia
-
 
 
