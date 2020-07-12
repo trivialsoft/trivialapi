@@ -165,6 +165,10 @@ public $edad;
 
 > Permite especificar el nombre del campo en la tabla asociado al la propiedad 
 
+### @DisplayName
+
+> Permite modificar el nombre de la propiedad en un mensaje de validacio	n 
+
 ### Notas
 
 > Si se antepone el prefijo + a las propiedades anteriores la validaciones se efectua antes de persistir una instancia
