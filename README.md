@@ -3,25 +3,26 @@
 
 ## Estructura
 ```plain
-    App  - Api
-				- Context.php
-				- Controller.php
-				- security.php
-	     - Components
-				- ComponentName.php
-				- ComponentNameService.php
+    App  	    
 		 - Core
-		        - Api.php
-				- ExplicitColumns.php
-				- Factory.php
-				- Masso.php
+		        - Context.php
+				- Generic.php
+				- Loop.php
 				- Model.php
-				- Parameters.php
-				- Request.php 
-				- TQL.php
-				- TrivialAuthorizer.php
-		 - Loop
-				- Context.php
+				- TSAuthorizer.php
+				- TSColumn.php
+				- TSController.php 
+				- TSFactory.php
+				- TSParameters.php
+				- TSRequest.php
+				- TSSecurity.php
+				- TSSort.php
+				- TSTQL.php
+				- TSValidator.php
+		 - Components
+				- ChangeLog.php
+				- Generico.php
+				- TLog.php
 ```	
 
 ## Autenticacion
